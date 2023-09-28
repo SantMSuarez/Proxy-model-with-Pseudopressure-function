@@ -105,19 +105,19 @@ eje_x = 1:33;
 
 figure
 plot(eje_x,WELLS_R2,'*r',eje_x,WELLS_R2_Ori,'.b')
-title('Coeficiente de determinación R^2')
+title('R^2')
 set(gca,'XTick',[1:33]); 
 set(gca,'XTickLabel',WELLS_NAMES);
 grid on
-legend('Pseudopresión','Original')
+legend('Pseudopressure','Original')
 
 figure
 plot(eje_x,WELLS_RMSE,'*r',eje_x,WELLS_RMSE_Ori,'.b')
-title('Error Cuadrático Medio')
+title('RMSE')
 set(gca,'XTick',[1:33]); 
 set(gca,'XTickLabel',WELLS_NAMES);
 grid on
-legend('Pseudopresión','Original')
+legend('Pseudopressure','Original')
 
 % REFERENCES
 % https://nataliaacevedo.com/rmse%E2%80%8A-%E2%80%8A-error-cuadratico-medio/
